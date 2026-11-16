@@ -1,0 +1,148 @@
+{
+ "title": "Пример 1. Python-разработчик Telegram-ботов (TECHNICAL_SPEC.md, 11.9)",
+ "text": "Python-разработчик Telegram-ботов. Обязательно: Python, aiogram, PostgreSQL, Docker. Будет плюсом: Redis, FastAPI. Задачи: разработка ботов, интеграции с API, настройка CI/CD. Опыт от 1 года обязателен. Работа удалённая, из любой страны. Компания из России.",
+ "days_ago": 1,
+ "vacancy": {
+  "title": "Python-разработчик (Telegram-боты)"
+ },
+ "facts": {
+  "is_offer": {
+   "value": "yes",
+   "quote": "Python-разработчик Telegram-ботов",
+   "confidence": "high"
+  },
+  "not_offer_kind": "none",
+  "title": "Python-разработчик (Telegram-боты)",
+  "company": "",
+  "offer_type": {
+   "value": "job",
+   "quote": "Python-разработчик Telegram-ботов",
+   "confidence": "high"
+  },
+  "direction": {
+   "value": "telegram_bots",
+   "quote": "Python-разработчик Telegram-ботов",
+   "confidence": "high"
+  },
+  "seniority": {
+   "value": "not_specified",
+   "quote": "",
+   "confidence": "high"
+  },
+  "experience": {
+   "years": 1,
+   "obligation": "required",
+   "quote": "Опыт от 1 года обязателен",
+   "confidence": "high"
+  },
+  "commercial_required": {
+   "value": "not_specified",
+   "quote": "",
+   "confidence": "high"
+  },
+  "work_format": {
+   "value": "remote",
+   "quote": "Работа удалённая",
+   "confidence": "high"
+  },
+  "relocation": {
+   "value": "not_specified",
+   "quote": "",
+   "confidence": "high"
+  },
+  "geo": {
+   "kind": "anywhere",
+   "countries": [],
+   "quote": "из любой страны",
+   "confidence": "high"
+  },
+  "employer_country": {
+   "code": "RU",
+   "quote": "Компания из России",
+   "confidence": "high"
+  },
+  "languages": [],
+  "legal": [],
+  "employment": {
+   "value": "not_specified",
+   "quote": "",
+   "confidence": "high"
+  },
+  "project_terms": {
+   "budget": "",
+   "deadline": "",
+   "payment": ""
+  },
+  "salary": {
+   "present": false,
+   "amount_from": 0,
+   "amount_to": 0,
+   "currency": "",
+   "period": "other"
+  },
+  "skills_required": {
+   "items": [
+    "python",
+    "aiogram",
+    "postgresql",
+    "docker"
+   ],
+   "quote": "Обязательно: Python, aiogram, PostgreSQL, Docker",
+   "quote_verified": true
+  },
+  "skills_optional": {
+   "items": [
+    "redis",
+    "fastapi"
+   ],
+   "quote": "Будет плюсом: Redis, FastAPI",
+   "quote_verified": true
+  },
+  "tasks": [
+   {
+    "text": "разработка ботов",
+    "type": "telegram_bots",
+    "core": true
+   },
+   {
+    "text": "интеграции с API",
+    "type": "api_integration",
+    "core": true
+   },
+   {
+    "text": "настройка CI/CD",
+    "type": "other",
+    "core": false
+   }
+  ],
+  "sales_share": {
+   "value": "none",
+   "quote": "",
+   "confidence": "high"
+  },
+  "other_requirements": [],
+  "risk_signs": [],
+  "apply_deadline": {
+   "date": "",
+   "quote": ""
+  },
+  "apply_instructions": [],
+  "ai_directed": {
+   "present": false,
+   "quote": ""
+  }
+ },
+ "expected": {
+  "total": 90,
+  "category": "excellent",
+  "stack": 27,
+  "tasks": 20,
+  "level": 16,
+  "direction": 15,
+  "clarity": 8,
+  "adjustments": 4,
+  "unknown_topics": [
+   "оформление"
+  ]
+ }
+}

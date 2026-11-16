@@ -1,0 +1,80 @@
+# Профиль кандидата (TECHNICAL_SPEC.md, раздел 5).
+# ВЫМЫШЛЕННЫЙ ПРИМЕР: кандидат, контакты и проекты придуманы для демонстрации.
+# Профессиональная часть — только то, что есть в резюме (разделы 5.1–5.6).
+# Параметры поиска (раздел 5.7) заданы владельцем и фактами резюме не являются.
+# Изменение файла создаёт новую версию профиля и пересчёт оценок без LLM.
+# Навыки записываются каноническими названиями из skills.yaml.
+
+source_note: "резюме вымышленного кандидата Алексея Демина (пример)"
+
+professional:
+  positioning: "Python-разработчик (backend, боты, тестирование)"
+  goal: "Удалённая работа или стажировка: Python, backend, интеграции с LLM, тестирование"
+  languages:
+    - {language: ru, level: native}       # других рабочих языков нет
+  education: "Высшее техническое"
+  experience: "Учебные и пет-проекты на Python, стажировка"
+
+  skills_confirmed:                       # раздел 5.2
+    "Язык и асинхронность": [python, asyncio]
+    "Telegram": [aiogram, telegram bot api, telegram payments, telethon]
+    "ИИ и LLM": [claude api, openai api, llm, prompt engineering, structured output, llm caching,
+                 vision, rag]
+    "Backend и API": [fastapi, rest api, jwt, api integration, webhooks, requests]
+    "Базы данных": [sql, postgresql, sqlite]
+    "Данные и файлы": [pypdf, python-docx, pandas, openpyxl, excel, csv, opencv, barcode scanning]
+    "Веб-скрапинг": [web scraping, devtools, curl_cffi, proxies, apify]
+    "Тестирование": [pytest, unittest, manual testing, test design, bug reports, postman, swagger,
+                     api testing]
+    "DevOps": [linux, systemd, selinux, ssh, git, github, docker, oracle cloud, apscheduler, monitoring,
+               deployment]
+    "Прочее": [mvp planning, technical documentation]
+
+  skills_unconfirmed: [sqlalchemy]        # раздел 5.3: указан в ТЗ, в резюме нет
+
+  projects:                               # раздел 5.4
+    - name: "Бот мониторинга цен на маркетплейсе"
+      task_types: [telegram_bots, payments, api_integration, scraping, llm_integration, schedulers,
+                   deploy_linux, python_autotests]
+    - name: "Мониторинг служб и скриптов на сервере"
+      task_types: [monitoring, telegram_bots, deploy_linux, python_autotests, llm_integration]
+    - name: "Канал и бот вакансий с ИИ-проверкой постов"
+      task_types: [telegram_bots, llm_integration, scraping, documents_processing, payments, deploy_linux]
+    - name: "Парсеры публичных сайтов"
+      task_types: [scraping, internal_api_research, api_integration, deploy_linux]
+    - name: "Интеграция с государственным API учёта товаров"
+      task_types: [gov_api_integration, telegram_bots, documents_processing, computer_vision, llm_integration,
+                   python_autotests, database_sql]
+    - name: "RAG-помощник по внутренним документам"
+      task_types: [llm_integration, rag, documents_processing]
+    - name: "REST API для небольшой CRM"
+      task_types: [backend_api, database_sql, auth, python_autotests, api_testing, deploy_linux]
+    - name: "Telegram-боты для малого бизнеса"
+      task_types: [telegram_bots, crm_features, api_integration]
+
+  covered_task_types:                     # левый столбец раздела 9.2
+    [telegram_bots, backend_api, api_integration, gov_api_integration, llm_integration, rag, scraping,
+     internal_api_research, documents_processing, database_sql, auth, payments, crm_features, schedulers,
+     manual_testing, api_testing, python_autotests, deploy_linux, monitoring, computer_vision, tech_docs]
+
+  confirmed_missing:                      # раздел 5.6, пополняет только владелец
+    - text: "рабочие языки, кроме русского"
+      applies_to: language
+
+  unknown_params:                         # раздел 5.5: фильтр «Документы» не исключает, а помечает
+    documents: unknown
+    foreign_phones: unknown
+    employment_forms: unknown
+
+  contacts:                               # раздел 5.1; только для писем, в промпт извлечения не передаются
+    telegram: "@demo_candidate"
+    email: "candidate@example.com"
+    phone: "+7 700 000-00-00"
+    github: "github.com/example-candidate"
+
+search:                                   # раздел 5.7
+  current_location: GE                    # параметр; часовой пояс и проверка страны в коде рассчитаны на GE
+  preferred_format: remote
+  employer_priority_first: [RU, KZ]
+  employer_priority_second: [AM, AZ, BY, KG, MD, TJ, TM, UZ]   # другие страны СНГ
+  working_language: ru

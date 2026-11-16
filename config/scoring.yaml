@@ -1,0 +1,126 @@
+# Правила скоринга (TECHNICAL_SPEC.md, разделы 4.1, 8, 10–12, 15).
+# Изменение файла создаёт новую версию правил (шаг A6) и запускает пересчёт без LLM.
+# Перечни слов уточняются на шагах A4 (правила до LLM) и A6 (скоринг).
+
+weights:              # максимумы пяти критериев, сумма 100
+  stack: 30
+  tasks: 25
+  level: 20
+  direction: 15
+  clarity: 10
+
+stack:
+  required_share: 0.8       # доля обязательных навыков
+  optional_share: 0.2       # доля желательных навыков
+  related_weight: 0.5       # покрытие смежным навыком
+  no_skills_value: 15       # навыки в вакансии не указаны
+  only_optional_base: 15    # указаны только желательные: 15 + 15 × покрытие
+
+tasks:
+  core_weight: 2
+  secondary_weight: 1
+  no_tasks_value: 12        # задачи не описаны
+
+level:
+  experience_penalties:     # обязательный стаж; от 5 лет — исключение фильтром
+    - {min_years: 3, max_years: 5, penalty: 12}
+    - {min_years: 1, max_years: 3, penalty: 4}
+  senior_confirmed_penalty: 6     # стаж не указан, старший уровень подтверждён
+  unmet_requirement_penalty: 3    # за каждое подтверждённо невыполнимое требование
+  unmet_requirement_cap: 9
+
+direction:
+  main_points: 15
+  related_points: 8
+  other_points: 0
+  main_codes: [python_backend, api_fastapi, telegram_bots, ai_llm, integrations, automation_dev, qa, scraping]
+  related_codes: [support_tech, implementation, other_tech]
+
+clarity:              # сумма равна weights.clarity
+  remote: 4
+  geo: 3
+  legal: 2
+  language: 1
+
+adjustments:          # сумма поправок не выходит за ±5
+  freshness:
+    fresh_max_days: 2
+    normal_max_days: 7
+    fresh: 2
+    normal: 0
+    old: -2
+  geo_priority:
+    first: 2          # Россия, Казахстан
+    second: 1         # другие страны СНГ
+    other: 0
+
+categories:
+  excellent: 85
+  good: 70
+  consider: 50
+
+gates:
+  exclude_required_years: 5
+  # География «да» при перечне стран без Грузии: цитата прямо разрешает СНГ или зарубежье.
+  geo_allow_words: [снг, зарубеж, любой стран, любых стран, любого города, abroad, worldwide, anywhere, any country]
+  actual_seen_days: 2       # вакансия видна в источнике не старше N суток — «открыта»
+
+prefilter:                 # правила до LLM: исключают только при однозначном признаке (раздел 8)
+  max_age_days: 14
+  min_text_chars: 80
+  incompatible_roles:      # сравниваются с названием целыми словами, дефис равен пробелу
+    - бухгалтер
+    - главный бухгалтер
+    - юрист
+    - юрисконсульт
+    - дизайнер
+    - графический дизайнер
+    - менеджер по продажам
+    - sales manager
+    - 1С-программист
+    - 1С-разработчик
+    - программист 1С
+    - разработчик 1С
+    - Java-разработчик
+    - Java developer
+    - C#-разработчик
+    - C# developer
+    - .NET-разработчик
+    - PHP-разработчик
+    - PHP developer
+    - iOS-разработчик
+    - iOS developer
+    - Android-разработчик
+    - Android developer
+    - frontend-разработчик
+    - frontend developer
+    - фронтенд-разработчик
+  profile_title_words: [python, питон, qa, тестировщик, тестирование, aqa, telegram, бот, llm, ai, backend, бэкенд, fastapi, парсинг, scraping, автоматизация]
+  not_vacancy_markers:
+    - резюме
+    - ищу работу
+    - ищу заказы
+
+seniority_words: [Senior, Lead, Principal, Architect, Head, Staff, ведущий, старший, руководитель, главный, тимлид]
+seniority_exclusions: [помощник, ассистент, главный офис, lead generation, лидогенерация]
+
+preliminary:          # оценка только по заголовку (раздел 12)
+  main_entry: 65
+  main: 58
+  related: 50
+  other: 40
+  cap: 69
+  # Слова сравниваются с началом слов названия: «бот» находит «ботов», но не «работа».
+  entry_markers: [стажёр, стажер, стажировка, intern, junior, джуниор, начинающий, без опыта, trainee]
+  main_keywords: [python, питон, qa, aqa, тестировщик, тестирован, tester, test, telegram, телеграм, бот, bot,
+                  llm, ai, ии, нейросет, gpt, backend, бэкенд, бекенд, fastapi, api, интеграц, парсинг, парсер,
+                  scraping, скрапинг, автоматизац, automation, сбор данных]
+  related_keywords: [техподдержк, поддержк, support, внедрен, no-code, low-code, nocode, интегратор, sql,
+                     разработчик, developer, программист, инженер, engineer, devops, аналитик]
+
+report:
+  threshold: 50
+  max_cards: 15
+  max_per_company: 3
+  first_show_days: 3
+  title_only_max: 5

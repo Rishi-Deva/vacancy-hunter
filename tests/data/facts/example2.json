@@ -1,0 +1,154 @@
+{
+ "title": "Пример 2. QA-инженер (API) (TECHNICAL_SPEC.md, 11.9)",
+ "text": "QA-инженер (API). Обязательно: Postman, SQL, Python, Selenium, Jira. Задачи: тестирование API, ручное тестирование, автотесты интерфейса. Опыт от 3 лет обязателен. Работа удалённая. Оформление по трудовому договору. Компания из России.",
+ "days_ago": 5,
+ "vacancy": {
+  "title": "QA-инженер (API)"
+ },
+ "facts": {
+  "is_offer": {
+   "value": "yes",
+   "quote": "QA-инженер (API)",
+   "confidence": "high"
+  },
+  "not_offer_kind": "none",
+  "title": "QA-инженер (API)",
+  "company": "",
+  "offer_type": {
+   "value": "job",
+   "quote": "QA-инженер (API)",
+   "confidence": "high"
+  },
+  "direction": {
+   "value": "qa",
+   "quote": "QA-инженер (API)",
+   "confidence": "high"
+  },
+  "seniority": {
+   "value": "not_specified",
+   "quote": "",
+   "confidence": "high"
+  },
+  "experience": {
+   "years": 3,
+   "obligation": "required",
+   "quote": "Опыт от 3 лет обязателен",
+   "confidence": "high"
+  },
+  "commercial_required": {
+   "value": "not_specified",
+   "quote": "",
+   "confidence": "high"
+  },
+  "work_format": {
+   "value": "remote",
+   "quote": "Работа удалённая",
+   "confidence": "high"
+  },
+  "relocation": {
+   "value": "not_specified",
+   "quote": "",
+   "confidence": "high"
+  },
+  "geo": {
+   "kind": "not_specified",
+   "countries": [],
+   "quote": "",
+   "confidence": "low"
+  },
+  "employer_country": {
+   "code": "RU",
+   "quote": "Компания из России",
+   "confidence": "high"
+  },
+  "languages": [],
+  "legal": [
+   {
+    "kind": "employment_contract",
+    "detail": "трудовой договор",
+    "obligation": "required",
+    "quote": "Оформление по трудовому договору"
+   }
+  ],
+  "employment": {
+   "value": "not_specified",
+   "quote": "",
+   "confidence": "high"
+  },
+  "project_terms": {
+   "budget": "",
+   "deadline": "",
+   "payment": ""
+  },
+  "salary": {
+   "present": false,
+   "amount_from": 0,
+   "amount_to": 0,
+   "currency": "",
+   "period": "other"
+  },
+  "skills_required": {
+   "items": [
+    "postman",
+    "sql",
+    "python",
+    "selenium",
+    "jira"
+   ],
+   "quote": "Обязательно: Postman, SQL, Python, Selenium, Jira",
+   "quote_verified": true
+  },
+  "skills_optional": {
+   "items": [],
+   "quote": "",
+   "quote_verified": true
+  },
+  "tasks": [
+   {
+    "text": "тестирование API",
+    "type": "api_testing",
+    "core": true
+   },
+   {
+    "text": "ручное тестирование",
+    "type": "manual_testing",
+    "core": true
+   },
+   {
+    "text": "автотесты интерфейса",
+    "type": "ui_autotests",
+    "core": false
+   }
+  ],
+  "sales_share": {
+   "value": "none",
+   "quote": "",
+   "confidence": "high"
+  },
+  "other_requirements": [],
+  "risk_signs": [],
+  "apply_deadline": {
+   "date": "",
+   "quote": ""
+  },
+  "apply_instructions": [],
+  "ai_directed": {
+   "present": false,
+   "quote": ""
+  }
+ },
+ "expected": {
+  "total": 68,
+  "category": "consider",
+  "stack": 18,
+  "tasks": 20,
+  "level": 8,
+  "direction": 15,
+  "clarity": 5,
+  "adjustments": 2,
+  "unknown_topics": [
+   "география",
+   "оформление"
+  ]
+ }
+}

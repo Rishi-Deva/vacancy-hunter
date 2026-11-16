@@ -1,0 +1,55 @@
+# Модели, промпты, цены и лимиты бюджета LLM (TECHNICAL_SPEC.md, раздел 21; AGENT_PROMPTS.md, раздел 2).
+# Другая модель включается только ручной правкой этого файла владельцем.
+# Значения проверяются на реальном API на шаге A5 (пункты V1–V6).
+
+roles:
+  extraction:
+    model: claude-haiku-5-5
+    prompt_version: p1-1.0
+    max_tokens: 3000
+    effort: low
+    thinking: disabled      # V4, 13.11.2026: без рассуждений ~380 выходных токенов на вызов вместо ~1090, сценарии T1–T20 пройдены
+    max_input_chars: 6000
+  letter:
+    model: claude-haiku-5-5
+    prompt_version: p2-1.0
+    max_tokens: 2500
+    effort: null          # не передаётся: уровень по умолчанию
+    max_input_chars: 6000
+  answer:
+    model: claude-haiku-5-5
+    prompt_version: p3-1.0
+    max_tokens: 2500
+    effort: null
+    max_input_chars: 2000
+
+prices:                   # долларов за миллион токенов, запросы до 100 000 токенов
+  claude-haiku-5-5:
+    input: 0.10
+    cache_write: 0.125
+    cache_read: 0.01
+    output: 0.50
+    checked_at: 2026-11-13   # V6: совпадают со справочником цен Anthropic
+
+budget:                   # доллары США
+  monthly_limit_usd: 3.00
+  letters_reserve_usd: 0.30
+  daily_extraction_limit_usd: 0.08
+  quiet_limit_usd: 0.50
+  warn1_usd: 1.50
+  warn2_usd: 2.50
+
+limits:
+  max_attempts: 3
+  max_parts: 4
+  part_overlap_chars: 300
+  max_concurrency: 4
+  quiet_posts_per_channel: 30
+  search_call_limit: 20
+
+observations:             # замеры на реальной модели, шаг A5 (AGENT_PROMPTS.md, раздел 12)
+  measured_at: 2026-11-13
+  avg_cost_per_record_usd: 0.0007   # V5: два вызова на запись (схема P1 разделена, V2), кэш тёплый
+  avg_output_tokens_p1: 382         # V4: без рассуждений; с адаптивными — около 1090
+  system_cached: true               # V3: системная часть кэшируется (чтение из кэша в 8 раз больше обычного входа)
+  note: "V1 модель принята; V2 схема целиком не компилируется — два вызова по половине полей (решение владельца 13.11.2026)"

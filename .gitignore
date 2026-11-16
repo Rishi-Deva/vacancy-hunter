@@ -1,0 +1,20 @@
+# Секреты: только на компьютере и сервере, никогда в репозитории
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+
+# Резервные копии и дампы базы
+backups/
+*.dump
+*.sql.gz
+*.bundle
+
+# Журналы и временные файлы
+*.log

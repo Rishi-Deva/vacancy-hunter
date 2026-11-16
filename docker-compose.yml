@@ -1,0 +1,108 @@
+# AI Vacancy Hunter: база db, одноразовый сервис миграций migrate и приложение app.
+# `docker compose up -d --build` запускает их по порядку: db → migrate → app.
+#
+# Секреты читаются из файла .env (подстановка ${...}) и передаются каждому
+# контейнеру только те, что ему нужны. env_file не используется намеренно.
+
+name: vacancy-hunter
+
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "5"
+
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_ADMIN_USER:?задайте POSTGRES_ADMIN_USER в .env}
+      # Пароли передаются файлами /run/secrets/*, а не переменными окружения:
+      # так они не видны в `docker inspect`.
+      POSTGRES_PASSWORD_FILE: /run/secrets/db_admin_password
+      # Ниже — имена для скрипта первого запуска docker/db-init/ (не секреты)
+      DB_NAME: ${DB_NAME:?задайте DB_NAME в .env}
+      DB_TEST_NAME: ${DB_TEST_NAME:?задайте DB_TEST_NAME в .env}
+      DB_MIGRATOR_USER: ${DB_MIGRATOR_USER:?задайте DB_MIGRATOR_USER в .env}
+      DB_APP_USER: ${DB_APP_USER:?задайте DB_APP_USER в .env}
+      DB_TEST_USER: ${DB_TEST_USER:?задайте DB_TEST_USER в .env}
+    secrets:
+      - db_admin_password
+      - db_migrator_password
+      - db_app_password
+      - db_test_password
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      # «z» — метка SELinux (Oracle Linux), иначе контейнер не прочитает папку; без SELinux не действует
+      - ./docker/db-init:/docker-entrypoint-initdb.d:ro,z
+    # Порт базы наружу не публикуется (ARCHITECTURE.md, раздел 15).
+    healthcheck:
+      # Проверка по TCP: во время первичной настройки база слушает только сокет,
+      # поэтому migrate не стартует, пока скрипт db-init не закончит работу.
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U \"$$POSTGRES_USER\" -d \"$$DB_NAME\""]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+    logging: *logging
+
+  migrate:
+    build: .
+    image: vacancy-hunter-app:latest
+    command: ["alembic", "upgrade", "head"]
+    restart: "no"
+    environment:
+      DB_HOST: db
+      DB_PORT: "5432"
+      DB_NAME: ${DB_NAME}
+      DB_MIGRATOR_USER: ${DB_MIGRATOR_USER}
+      DB_MIGRATOR_PASSWORD: ${DB_MIGRATOR_PASSWORD:?задайте DB_MIGRATOR_PASSWORD в .env}
+    depends_on:
+      db:
+        condition: service_healthy
+    logging: *logging
+
+  app:
+    build: .
+    image: vacancy-hunter-app:latest
+    command: ["python", "-m", "vacancy_hunter", "run"]
+    restart: unless-stopped
+    environment:
+      DB_HOST: db
+      DB_PORT: "5432"
+      DB_NAME: ${DB_NAME}
+      DB_APP_USER: ${DB_APP_USER}
+      DB_APP_PASSWORD: ${DB_APP_PASSWORD:?задайте DB_APP_PASSWORD в .env}
+      # Тестовая база: только для `docker compose exec app pytest`
+      DB_TEST_NAME: ${DB_TEST_NAME}
+      DB_TEST_USER: ${DB_TEST_USER}
+      DB_TEST_PASSWORD: ${DB_TEST_PASSWORD:?задайте DB_TEST_PASSWORD в .env}
+      # Следующие шаги
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN:-}
+      TELEGRAM_OWNER_ID: ${TELEGRAM_OWNER_ID:-}
+      HEARTBEAT_URL: ${HEARTBEAT_URL:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+    volumes:
+      - ./config:/app/config:ro,z
+      - backups:/app/backups        # резервные копии базы (шаг A8): 7 ежедневных и 4 еженедельных
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    logging: *logging
+
+volumes:
+  db_data:
+  backups:
+
+# Секреты берутся из .env и передаются контейнеру db только файлами.
+secrets:
+  db_admin_password:
+    environment: POSTGRES_ADMIN_PASSWORD
+  db_migrator_password:
+    environment: DB_MIGRATOR_PASSWORD
+  db_app_password:
+    environment: DB_APP_PASSWORD
+  db_test_password:
+    environment: DB_TEST_PASSWORD

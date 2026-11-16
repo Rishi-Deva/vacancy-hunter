@@ -1,0 +1,148 @@
+{
+ "title": "Пример 3. Senior Python Developer, стаж не указан (TECHNICAL_SPEC.md, 11.9)",
+ "text": "Senior Python Developer. Обязательно: Python, Django, Kafka, Kubernetes. Будет плюсом: FastAPI. Задачи: разработка backend-сервисов, оптимизация под высокую нагрузку, ревью кода. Работа удалённая. Компания из России.",
+ "days_ago": 9,
+ "vacancy": {
+  "title": "Senior Python Developer"
+ },
+ "facts": {
+  "is_offer": {
+   "value": "yes",
+   "quote": "Senior Python Developer",
+   "confidence": "high"
+  },
+  "not_offer_kind": "none",
+  "title": "Senior Python Developer",
+  "company": "",
+  "offer_type": {
+   "value": "job",
+   "quote": "Senior Python Developer",
+   "confidence": "high"
+  },
+  "direction": {
+   "value": "python_backend",
+   "quote": "Senior Python Developer",
+   "confidence": "high"
+  },
+  "seniority": {
+   "value": "senior",
+   "quote": "Senior Python Developer",
+   "confidence": "high"
+  },
+  "experience": {
+   "years": 0,
+   "obligation": "not_specified",
+   "quote": "",
+   "confidence": "low"
+  },
+  "commercial_required": {
+   "value": "not_specified",
+   "quote": "",
+   "confidence": "high"
+  },
+  "work_format": {
+   "value": "remote",
+   "quote": "Работа удалённая",
+   "confidence": "high"
+  },
+  "relocation": {
+   "value": "not_specified",
+   "quote": "",
+   "confidence": "high"
+  },
+  "geo": {
+   "kind": "not_specified",
+   "countries": [],
+   "quote": "",
+   "confidence": "low"
+  },
+  "employer_country": {
+   "code": "RU",
+   "quote": "Компания из России",
+   "confidence": "high"
+  },
+  "languages": [],
+  "legal": [],
+  "employment": {
+   "value": "not_specified",
+   "quote": "",
+   "confidence": "high"
+  },
+  "project_terms": {
+   "budget": "",
+   "deadline": "",
+   "payment": ""
+  },
+  "salary": {
+   "present": false,
+   "amount_from": 0,
+   "amount_to": 0,
+   "currency": "",
+   "period": "other"
+  },
+  "skills_required": {
+   "items": [
+    "python",
+    "django",
+    "kafka",
+    "kubernetes"
+   ],
+   "quote": "Обязательно: Python, Django, Kafka, Kubernetes",
+   "quote_verified": true
+  },
+  "skills_optional": {
+   "items": [
+    "fastapi"
+   ],
+   "quote": "Будет плюсом: FastAPI",
+   "quote_verified": true
+  },
+  "tasks": [
+   {
+    "text": "разработка backend-сервисов",
+    "type": "backend_api",
+    "core": true
+   },
+   {
+    "text": "оптимизация под высокую нагрузку",
+    "type": "other",
+    "core": true
+   },
+   {
+    "text": "ревью кода",
+    "type": "other",
+    "core": false
+   }
+  ],
+  "sales_share": {
+   "value": "none",
+   "quote": "",
+   "confidence": "high"
+  },
+  "other_requirements": [],
+  "risk_signs": [],
+  "apply_deadline": {
+   "date": "",
+   "quote": ""
+  },
+  "apply_instructions": [],
+  "ai_directed": {
+   "present": false,
+   "quote": ""
+  }
+ },
+ "expected": {
+  "total": 59,
+  "category": "consider",
+  "stack": 15,
+  "tasks": 10,
+  "level": 14,
+  "direction": 15,
+  "clarity": 5,
+  "adjustments": 0,
+  "unknown_topics": [
+   "география",
+   "оформление"
+  ]
+ }
+}

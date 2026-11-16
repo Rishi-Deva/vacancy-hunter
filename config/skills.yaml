@@ -1,0 +1,141 @@
+# Словарь навыков (TECHNICAL_SPEC.md, раздел 6).
+# canonical — одно имя навыка; LLM получает перечень канонических названий и возвращает навыки в этом виде.
+# synonyms — варианты написания (регистр не важен). group — область раздела 5.2, «требует подтверждения»,
+# «вне профиля» или «вне оценки» (не навык: язык учитывается фильтром «Язык», а не в стеке).
+# related — смежность в одну сторону: «требуется этот навык → засчитывается 0,5 при наличии related в профиле».
+# Изменение файла входит в версию профиля: новая версия и пересчёт оценок.
+
+skills:
+  - {canonical: "python", group: "Язык и асинхронность", synonyms: ["python 3", "python3", "питон", "пайтон"]}
+  - {canonical: "asyncio", group: "Язык и асинхронность", synonyms: ["async/await", "async", "асинхронность", "асинхронное программирование", "семафоры", "asyncio semaphore"]}
+  - {canonical: "aiogram", group: "Telegram", synonyms: ["aiogram 3", "aiogram3", "aiogram 3.x"]}
+  - {canonical: "telegram bot api", group: "Telegram", synonyms: ["bot api", "telegram api", "telegram bots api", "telegram-боты", "telegram боты", "telegram"]}
+  - {canonical: "telegram payments", group: "Telegram", synonyms: ["telegram stars", "оплата telegram stars", "подписки telegram", "telegram payments api"]}
+  - {canonical: "telethon", group: "Telegram"}
+  - {canonical: "claude api", group: "ИИ и LLM", synonyms: ["claude", "anthropic", "anthropic api", "anthropic claude"]}
+  - {canonical: "openai api", group: "ИИ и LLM", synonyms: ["openai", "chatgpt api", "gpt api", "chatgpt", "gpt"]}
+  - {canonical: "llm", group: "ИИ и LLM", synonyms: ["llm api", "llm-интеграции", "интеграция llm", "large language models", "большие языковые модели", "языковые модели", "генеративный ии", "genai", "нейросети"]}
+  - {canonical: "prompt engineering", group: "ИИ и LLM", synonyms: ["промпт-инжиниринг", "промпт инжиниринг", "промптинг", "prompting", "промпты"]}
+  - {canonical: "structured output", group: "ИИ и LLM", synonyms: ["json schema", "json-схема", "строгий json", "structured outputs", "валидация json"]}
+  - {canonical: "llm caching", group: "ИИ и LLM", synonyms: ["prompt caching", "кэширование промптов", "кэширование ответов llm"]}
+  - {canonical: "vision", group: "ИИ и LLM", synonyms: ["распознавание по фото", "llm vision", "gpt vision"]}
+  - {canonical: "rag", group: "ИИ и LLM", synonyms: ["retrieval augmented generation", "retrieval-augmented generation"]}
+  - {canonical: "fastapi", group: "Backend и API", synonyms: ["fast api"]}
+  - {canonical: "rest api", group: "Backend и API", synonyms: ["rest", "restful", "restful api", "rest-api", "http api"]}
+  - {canonical: "jwt", group: "Backend и API", synonyms: ["json web token", "jwt-авторизация"]}
+  - {canonical: "api integration", group: "Backend и API", synonyms: ["интеграции api", "интеграция api", "интеграции с api", "интеграции с внешними api", "интеграции", "api интеграции", "внешние api"]}
+  - {canonical: "webhooks", group: "Backend и API", synonyms: ["webhook", "вебхуки", "вебхук"]}
+  - {canonical: "requests", group: "Backend и API", synonyms: ["python requests"]}
+  - {canonical: "sql", group: "Базы данных", synonyms: ["базы данных", "реляционные базы данных", "sql-запросы", "субд"]}
+  - {canonical: "postgresql", group: "Базы данных", synonyms: ["postgres", "postgre", "постгрес", "postgresql 16", "psql"]}
+  - {canonical: "sqlite", group: "Базы данных", synonyms: ["sqlite3"]}
+  - {canonical: "pypdf", group: "Данные и файлы", synonyms: ["pypdf2"]}
+  - {canonical: "python-docx", group: "Данные и файлы", synonyms: ["docx"]}
+  - {canonical: "pandas", group: "Данные и файлы"}
+  - {canonical: "openpyxl", group: "Данные и файлы"}
+  - {canonical: "excel", group: "Данные и файлы", synonyms: ["microsoft excel", "ms excel", "xlsx", "обработка excel"]}
+  - {canonical: "csv", group: "Данные и файлы", synonyms: ["обработка csv"]}
+  - {canonical: "opencv", group: "Данные и файлы", synonyms: ["cv2", "open cv"]}
+  - {canonical: "barcode scanning", group: "Данные и файлы", synonyms: ["штрихкоды", "чтение штрихкодов", "распознавание штрихкодов", "barcodes"]}
+  - {canonical: "web scraping", group: "Веб-скрапинг", synonyms: ["scraping", "парсинг", "парсинг сайтов", "скрапинг", "веб-скрапинг", "сбор данных", "web-scraping", "парсеры"]}
+  - {canonical: "devtools", group: "Веб-скрапинг", synonyms: ["chrome devtools", "dev tools", "инструменты разработчика"]}
+  - {canonical: "curl_cffi", group: "Веб-скрапинг", synonyms: ["curl-cffi"]}
+  - {canonical: "proxies", group: "Веб-скрапинг", synonyms: ["прокси", "proxy"]}
+  - {canonical: "apify", group: "Веб-скрапинг", synonyms: ["apify sdk", "apify actors", "акторы apify"]}
+  - {canonical: "pytest", group: "Тестирование", synonyms: ["py.test"]}
+  - {canonical: "unittest", group: "Тестирование", synonyms: ["unittest.mock", "mock", "моки"]}
+  - {canonical: "manual testing", group: "Тестирование", synonyms: ["ручное тестирование", "manual qa", "функциональное тестирование"]}
+  - {canonical: "test design", group: "Тестирование", synonyms: ["тест-дизайн", "техники тест-дизайна", "граничные значения", "тест-кейсы", "test cases", "чек-листы"]}
+  - {canonical: "bug reports", group: "Тестирование", synonyms: ["баг-репорты", "bug reporting", "баг репорты", "оформление дефектов"]}
+  - {canonical: "postman", group: "Тестирование"}
+  - {canonical: "swagger", group: "Тестирование", synonyms: ["swagger ui", "openapi"]}
+  - {canonical: "api testing", group: "Тестирование", synonyms: ["тестирование api", "тестированиеapi", "api-тестирование"]}
+  - {canonical: "linux", group: "DevOps", synonyms: ["ubuntu", "oracle linux", "unix", "debian", "centos"]}
+  - {canonical: "systemd", group: "DevOps", synonyms: ["systemctl"]}
+  - {canonical: "selinux", group: "DevOps"}
+  - {canonical: "ssh", group: "DevOps"}
+  - {canonical: "git", group: "DevOps"}
+  - {canonical: "github", group: "DevOps"}
+  - {canonical: "docker", group: "DevOps", synonyms: ["docker compose", "docker-compose", "контейнеризация"]}
+  - {canonical: "oracle cloud", group: "DevOps", synonyms: ["oci", "oracle cloud infrastructure"]}
+  - {canonical: "apscheduler", group: "DevOps"}
+  - {canonical: "monitoring", group: "DevOps", synonyms: ["мониторинг", "мониторинг служб"]}
+  - {canonical: "deployment", group: "DevOps", synonyms: ["деплой", "развёртывание", "развертывание", "deploy"]}
+  - {canonical: "mvp planning", group: "Прочее", synonyms: ["mvp"]}
+  - {canonical: "technical documentation", group: "Прочее", synonyms: ["техническая документация", "документация", "написание документации"]}
+  - {canonical: "sqlalchemy", group: "требует подтверждения", synonyms: ["sql alchemy"]}
+  - {canonical: "django", group: "вне профиля", synonyms: ["django rest framework", "drf"], related: ["fastapi"]}
+  - {canonical: "flask", group: "вне профиля", related: ["fastapi"]}
+  - {canonical: "aiohttp", group: "вне профиля", related: ["fastapi"]}
+  - {canonical: "mysql", group: "вне профиля", related: ["postgresql"]}
+  - {canonical: "mariadb", group: "вне профиля", related: ["postgresql"]}
+  - {canonical: "aiogram 2", group: "вне профиля", synonyms: ["aiogram2", "aiogram 2.x"], related: ["aiogram"]}
+  - {canonical: "python-telegram-bot", group: "вне профиля", synonyms: ["ptb"], related: ["aiogram"]}
+  - {canonical: "pytelegrambotapi", group: "вне профиля", synonyms: ["telebot"], related: ["aiogram"]}
+  - {canonical: "scrapy", group: "вне профиля", related: ["web scraping"]}
+  - {canonical: "beautifulsoup", group: "вне профиля", synonyms: ["beautiful soup", "bs4"], related: ["web scraping"]}
+  - {canonical: "gitlab", group: "вне профиля", related: ["git", "github"]}
+  - {canonical: "bitbucket", group: "вне профиля", related: ["git", "github"]}
+  - {canonical: "insomnia", group: "вне профиля", related: ["postman"]}
+  - {canonical: "yandexgpt", group: "вне профиля", synonyms: ["yandex gpt"], related: ["claude api", "openai api"]}
+  - {canonical: "gigachat", group: "вне профиля", related: ["claude api", "openai api"]}
+  - {canonical: "langchain", group: "вне профиля", related: ["rag", "llm"]}
+  - {canonical: "llamaindex", group: "вне профиля", synonyms: ["llama index"], related: ["rag", "llm"]}
+  - {canonical: "selenium", group: "вне профиля"}
+  - {canonical: "playwright", group: "вне профиля"}
+  - {canonical: "jira", group: "вне профиля"}
+  - {canonical: "confluence", group: "вне профиля"}
+  - {canonical: "kubernetes", group: "вне профиля", synonyms: ["k8s"]}
+  - {canonical: "kafka", group: "вне профиля", synonyms: ["apache kafka"]}
+  - {canonical: "rabbitmq", group: "вне профиля"}
+  - {canonical: "redis", group: "вне профиля"}
+  - {canonical: "celery", group: "вне профиля"}
+  - {canonical: "mongodb", group: "вне профиля", synonyms: ["mongo"]}
+  - {canonical: "clickhouse", group: "вне профиля"}
+  - {canonical: "elasticsearch", group: "вне профиля", synonyms: ["elastic"]}
+  - {canonical: "greenplum", group: "вне профиля"}
+  - {canonical: "ci/cd", group: "вне профиля", synonyms: ["ci", "cicd", "ci / cd"]}
+  - {canonical: "jenkins", group: "вне профиля"}
+  - {canonical: "gitlab ci", group: "вне профиля"}
+  - {canonical: "terraform", group: "вне профиля"}
+  - {canonical: "ansible", group: "вне профиля"}
+  - {canonical: "aws", group: "вне профиля", synonyms: ["amazon web services"]}
+  - {canonical: "gcp", group: "вне профиля", synonyms: ["google cloud"]}
+  - {canonical: "azure", group: "вне профиля"}
+  - {canonical: "nginx", group: "вне профиля"}
+  - {canonical: "grafana", group: "вне профиля"}
+  - {canonical: "prometheus", group: "вне профиля"}
+  - {canonical: "airflow", group: "вне профиля", synonyms: ["apache airflow"]}
+  - {canonical: "spark", group: "вне профиля", synonyms: ["apache spark", "pyspark"]}
+  - {canonical: "etl", group: "вне профиля"}
+  - {canonical: "dwh", group: "вне профиля", synonyms: ["хранилища данных"]}
+  - {canonical: "numpy", group: "вне профиля"}
+  - {canonical: "scikit-learn", group: "вне профиля", synonyms: ["sklearn"]}
+  - {canonical: "pytorch", group: "вне профиля", synonyms: ["torch"]}
+  - {canonical: "tensorflow", group: "вне профиля"}
+  - {canonical: "machine learning", group: "вне профиля", synonyms: ["ml", "машинное обучение"]}
+  - {canonical: "graphql", group: "вне профиля"}
+  - {canonical: "grpc", group: "вне профиля"}
+  - {canonical: "websockets", group: "вне профиля", synonyms: ["websocket"]}
+  - {canonical: "microservices", group: "вне профиля", synonyms: ["микросервисы", "микросервисная архитектура"]}
+  - {canonical: "javascript", group: "вне профиля", synonyms: ["js"]}
+  - {canonical: "typescript", group: "вне профиля", synonyms: ["ts"]}
+  - {canonical: "react", group: "вне профиля", synonyms: ["react.js", "reactjs"]}
+  - {canonical: "vue", group: "вне профиля", synonyms: ["vue.js", "vuejs"]}
+  - {canonical: "html", group: "вне профиля", synonyms: ["html5"]}
+  - {canonical: "css", group: "вне профиля", synonyms: ["css3"]}
+  - {canonical: "node.js", group: "вне профиля", synonyms: ["nodejs", "node"]}
+  - {canonical: "java", group: "вне профиля"}
+  - {canonical: "c#", group: "вне профиля"}
+  - {canonical: "dotnet", group: "вне профиля", synonyms: [".net"]}
+  - {canonical: "php", group: "вне профиля"}
+  - {canonical: "go", group: "вне профиля", synonyms: ["golang"]}
+  - {canonical: "c++", group: "вне профиля"}
+  - {canonical: "1c", group: "вне профиля", synonyms: ["1с"]}
+  - {canonical: "bitrix24", group: "вне профиля", synonyms: ["битрикс24", "битрикс"]}
+  - {canonical: "jmeter", group: "вне профиля"}
+  - {canonical: "locust", group: "вне профиля"}
+  - {canonical: "tableau", group: "вне профиля"}
+  - {canonical: "power bi", group: "вне профиля", synonyms: ["powerbi"]}
+  - {canonical: "bpmn", group: "вне профиля"}
+  - {canonical: "english", group: "вне оценки", synonyms: ["английский", "английский язык", "english language"]}

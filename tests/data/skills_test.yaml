@@ -1,0 +1,22 @@
+# Тестовый словарь навыков (TEST_PLAN.md, раздел 3).
+skills:
+  - {canonical: python, group: "Язык", synonyms: ["python 3", питон]}
+  - {canonical: aiogram, group: Telegram, synonyms: ["aiogram 3"]}
+  - {canonical: fastapi, group: Backend}
+  - {canonical: rest api, group: Backend, synonyms: [rest, restful]}
+  - {canonical: sql, group: "Базы данных"}
+  - {canonical: postgresql, group: "Базы данных", synonyms: [postgres, постгрес]}
+  - {canonical: postman, group: "Тестирование"}
+  - {canonical: pytest, group: "Тестирование"}
+  - {canonical: api testing, group: "Тестирование", synonyms: ["тестирование api"]}
+  - {canonical: docker, group: DevOps}
+  - {canonical: git, group: DevOps}
+  - {canonical: sqlalchemy, group: "требует подтверждения"}
+  - {canonical: django, group: "вне профиля", related: [fastapi]}
+  - {canonical: mysql, group: "вне профиля", related: [postgresql]}
+  - {canonical: redis, group: "вне профиля"}
+  - {canonical: selenium, group: "вне профиля"}
+  - {canonical: jira, group: "вне профиля"}
+  - {canonical: kafka, group: "вне профиля", synonyms: [apache kafka]}
+  - {canonical: kubernetes, group: "вне профиля", synonyms: [k8s]}
+  - {canonical: english, group: "вне оценки", synonyms: ["английский язык"]}

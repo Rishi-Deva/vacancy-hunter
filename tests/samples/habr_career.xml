@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Вакансии — Хабр Карьера</title>
+    <description>Вакансии — Хабр Карьера</description>
+    <link>https://career.habr.com/vacancies/rss</link>
+    <language>ru</language>
+    <item>
+      <title>Требуется «Технический писатель» (от 120 000 до 130 000 ₽)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Технический писатель». От 120 000 ₽ до 130 000 ₽. Полный рабочий день. Можно удалённо. Требуемые навыки: #middle, #Техническаядокументация, #JavaScript, #Markdown, #AsciiDoc, #ГОСТ, #Openstack, #VMware, #Python, #Git.</description>
+      <author>Компания 1</author>
+      <pubDate>Fri, 13 Nov 2026 17:33:40 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000167705</link>
+      <guid>1000167705</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «C#/.NET-разработчик» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «C#/.NET-разработчик». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #.NET, #C#.</description>
+      <author>Компания 2</author>
+      <pubDate>Fri, 13 Nov 2026 16:36:10 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000170086</link>
+      <guid>1000170086</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Инженер машинного обучения» (от 250 000 до 270 000 ₽)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Инженер машинного обучения». От 250 000 ₽ до 270 000 ₽. Полный рабочий день. Можно удалённо. Требуемые навыки: #senior, #Python, #SQL, #PostgreSQL, #Pandas.</description>
+      <author>Компания 3</author>
+      <pubDate>Fri, 13 Nov 2026 16:30:20 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000170085</link>
+      <guid>1000170085</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Старший Backend-разработчик PHP (лидер команды)» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Старший Backend-разработчик PHP (лидер команды)». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #lead, #PHP, #MySQL, #PostgreSQL.</description>
+      <author>Компания 4</author>
+      <pubDate>Fri, 13 Nov 2026 16:25:20 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000170080</link>
+      <guid>1000170080</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Аналитик данных» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Аналитик данных». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #PowerQueryM, #LLM.</description>
+      <author>Компания 5</author>
+      <pubDate>Fri, 13 Nov 2026 16:21:00 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000170077</link>
+      <guid>1000170077</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Python-разработчик» (Москва)</title>
+      <description>Компания «Пример»» ищет хорошего специалиста на вакансию «Python-разработчик». Москва (Россия). Можно удалённо. Требуемые навыки: #Python.</description>
+      <author>Компания 6</author>
+      <pubDate>Fri, 13 Nov 2026 15:44:57 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000165251</link>
+      <guid>1000165251</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Инженер по обеспечению безопасности разработки (Fuzzing)» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Инженер по обеспечению безопасности разработки (Fuzzing)». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #middle, #C#, #C++, #Linux, #Docker, #Jenkins, #Kubernetes, #Git, #SAST/DAST, #SSDL.</description>
+      <author>Компания 7</author>
+      <pubDate>Fri, 13 Nov 2026 15:32:33 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000167238</link>
+      <guid>1000167238</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Инженер по обеспечению безопасности разработки» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Инженер по обеспечению безопасности разработки». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #Linux, #Python, #Kubernetes, #Docker, #SAST/DAST.</description>
+      <author>Компания 8</author>
+      <pubDate>Fri, 13 Nov 2026 15:28:33 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000167237</link>
+      <guid>1000167237</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Claude Code Backend Developer»</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Claude Code Backend Developer». Полный рабочий день. Можно удалённо. Требуемые навыки: #senior, #LLM, #Python, #FastAPI, #AgentSkills, #PostgreSQL, #Redis, #Docker, #React, #TypeScript, #Английскийязык.</description>
+      <author>Компания 9</author>
+      <pubDate>Fri, 13 Nov 2026 14:51:25 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169682</link>
+      <guid>1000169682</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «MLOps Engineer»</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «MLOps Engineer». Можно удалённо. Требуемые навыки: #LLM.</description>
+      <author>Компания 10</author>
+      <pubDate>Fri, 13 Nov 2026 14:40:59 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000165362</link>
+      <guid>1000165362</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Data Engineer» (Казань)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Data Engineer». Казань (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #lead, #PostgreSQL, #ClickHouse, #Greenplum.</description>
+      <author>Компания 11</author>
+      <pubDate>Fri, 13 Nov 2026 14:27:20 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000168887</link>
+      <guid>1000168887</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Junior Go Developer» (Казань, от 75 000 до 125 000 ₽)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Junior Go Developer». Казань (Россия). От 75 000 ₽ до 125 000 ₽. Полный рабочий день. Можно удалённо. Требуемые навыки: #junior, #SQL, #Базыданных, #Golang, #TCP, #RESTfulAPI.</description>
+      <author>Компания 12</author>
+      <pubDate>Fri, 13 Nov 2026 14:27:12 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000168365</link>
+      <guid>1000168365</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Java Developer» (от 75 000 ₽)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Java Developer». От 75 000 ₽. Полный рабочий день. Можно удалённо. Требуемые навыки: #junior, #Java, #Kotlin, #Git, #Docker, #JavaSpringFramework, #ApacheKafka, #RabbitMQ.</description>
+      <author>Компания 13</author>
+      <pubDate>Fri, 13 Nov 2026 14:27:12 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000168359</link>
+      <guid>1000168359</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «ML-инженер» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «ML-инженер». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #senior, #Git, #PostgreSQL, #Python.</description>
+      <author>Компания 14</author>
+      <pubDate>Fri, 13 Nov 2026 12:27:30 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000166282</link>
+      <guid>1000166282</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Python-разработчик » (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Python-разработчик ». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #senior, #Python, #FastAPI, #Asyncio, #ApacheKafka, #Redis, #Git, #Docker, #CI/CD.</description>
+      <author>Компания 15</author>
+      <pubDate>Fri, 13 Nov 2026 12:27:12 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000168949</link>
+      <guid>1000168949</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «ML разработчик / Проектная работа / АУТСТАФФ»</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «ML разработчик / Проектная работа / АУТСТАФФ». Полный рабочий день. Можно удалённо. Требуемые навыки: #senior, #Python, #PyTorch, #OpenCV.</description>
+      <author>Компания 16</author>
+      <pubDate>Fri, 13 Nov 2026 12:27:11 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000166988</link>
+      <guid>1000166988</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Руководитель архитектуры (Head of Architecture)» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Руководитель архитектуры (Head of Architecture)». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #lead, #DDD, #TOGAF, #ArchiMate, #BPMN.</description>
+      <author>Компания 17</author>
+      <pubDate>Fri, 13 Nov 2026 11:56:48 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169989</link>
+      <guid>1000169989</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Data Engineer» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Data Engineer». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #SQL, #Greenplum, #ETL, #DWH.</description>
+      <author>Компания 18</author>
+      <pubDate>Fri, 13 Nov 2026 11:49:19 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169987</link>
+      <guid>1000169987</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Fullstack-аналитик (Бизнес/Системный аналитик)» (Екатеринбург)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Fullstack-аналитик (Бизнес/Системный аналитик)». Екатеринбург (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #BPMN, #B2G, #B2B, #SQL, #ITIL.</description>
+      <author>Компания 19</author>
+      <pubDate>Fri, 13 Nov 2026 11:40:28 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169661</link>
+      <guid>1000169661</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Менеджер по эффективности рекламного кабинета (Аналитик)» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Менеджер по эффективности рекламного кабинета (Аналитик)». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #SQL, #Tableau, #PowerBI, #Большиеданные.</description>
+      <author>Компания 20</author>
+      <pubDate>Fri, 13 Nov 2026 11:30:29 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169980</link>
+      <guid>1000169980</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Инженер по нагрузочному тестированию (JMeter) / Performance QA Engineer»</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Инженер по нагрузочному тестированию (JMeter) / Performance QA Engineer». Полный рабочий день. Можно удалённо. Требуемые навыки: #junior, #ApacheJMeter.</description>
+      <author>Компания 21</author>
+      <pubDate>Fri, 13 Nov 2026 11:27:29 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000168590</link>
+      <guid>1000168590</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Python разработчик»</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Python разработчик». Полный рабочий день. Можно удалённо. Требуемые навыки: #middle, #Python, #SQL, #Docker, #Базыданных.</description>
+      <author>Компания 22</author>
+      <pubDate>Fri, 13 Nov 2026 11:27:06 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000159611</link>
+      <guid>1000159611</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Инженер технической поддержки Naumen Contact Center» (Екатеринбург)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Инженер технической поддержки Naumen Contact Center». Екатеринбург (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #SIP, #АдминистрированиеLinux, #SQL, #Python.</description>
+      <author>Компания 23</author>
+      <pubDate>Fri, 13 Nov 2026 11:26:51 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169658</link>
+      <guid>1000169658</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Инженер технической поддержки продукта Naumen Erudite» (Екатеринбург)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Инженер технической поддержки продукта Naumen Erudite». Екатеринбург (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #SQL, #Python, #Linux, #Docker, #REST, #TCP.</description>
+      <author>Компания 24</author>
+      <pubDate>Fri, 13 Nov 2026 11:14:15 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169656</link>
+      <guid>1000169656</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Старший графический дизайнер» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Старший графический дизайнер». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #senior, #Tilda, #AdobePhotoshop, #AdobeIllustrator, #FigmaDesign.</description>
+      <author>Компания 25</author>
+      <pubDate>Fri, 13 Nov 2026 11:09:09 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169952</link>
+      <guid>1000169952</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Старший коммерческий аналитик»</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Старший коммерческий аналитик». Полный рабочий день. Можно удалённо. Требуемые навыки: #senior, #MicrosoftExcel, #SQL, #Python.</description>
+      <author>Компания 26</author>
+      <pubDate>Fri, 13 Nov 2026 11:04:01 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169943</link>
+      <guid>1000169943</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Data Engineer» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Data Engineer». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #DWH, #ETL, #SQL.</description>
+      <author>Компания 27</author>
+      <pubDate>Fri, 13 Nov 2026 11:02:15 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169941</link>
+      <guid>1000169941</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Solution Architect / Архитектор решений (маркетинг)» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Solution Architect / Архитектор решений (маркетинг)». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #SQL, #ОрганизацияработысCRM.</description>
+      <author>Компания 28</author>
+      <pubDate>Fri, 13 Nov 2026 11:01:12 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169939</link>
+      <guid>1000169939</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Инженер по автоматизации тестирования (Java) / QA Automation Engineer»</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Инженер по автоматизации тестирования (Java) / QA Automation Engineer». Полный рабочий день. Можно удалённо. Требуемые навыки: #middle, #Java.</description>
+      <author>Компания 29</author>
+      <pubDate>Fri, 13 Nov 2026 10:47:33 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000168587</link>
+      <guid>1000168587</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «1С Разработчик (интеграции)»</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «1С Разработчик (интеграции)». Полный рабочий день. Можно удалённо. Требуемые навыки: #senior, #Разработкапод1С, #RabbitMQ, #REST.</description>
+      <author>Компания 30</author>
+      <pubDate>Fri, 13 Nov 2026 10:43:03 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169594</link>
+      <guid>1000169594</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Инженер по тестированию (Python / API) / QA Engineer»</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Инженер по тестированию (Python / API) / QA Engineer». Полный рабочий день. Можно удалённо. Требуемые навыки: #middle, #Python.</description>
+      <author>Компания 31</author>
+      <pubDate>Fri, 13 Nov 2026 10:42:40 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000168585</link>
+      <guid>1000168585</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Инженер-тестировщик (ручное тестирование / API)»</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Инженер-тестировщик (ручное тестирование / API)». Можно удалённо. Требуемые навыки: #middle, #ТестированиеAPI.</description>
+      <author>Компания 32</author>
+      <pubDate>Fri, 13 Nov 2026 10:36:58 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000168584</link>
+      <guid>1000168584</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Инженер по тестированию (Java-автоматизация) / QA Automation Engineer (ЦФА / Бло» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Инженер по тестированию (Java-автоматизация) / QA Automation Engineer (ЦФА / Бло». Москва (Россия), Санкт-Петербург (Россия), Омск (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #middle, #Java.</description>
+      <author>Компания 33</author>
+      <pubDate>Fri, 13 Nov 2026 10:29:16 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000168583</link>
+      <guid>1000168583</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Backend-разработчик BItrix/PHP (cтажер)» (Москва)</title>
+      <description>Компания «Пример»» ищет хорошего специалиста на вакансию «Backend-разработчик BItrix/PHP (cтажер)». Москва (Россия). Неполный рабочий день. Можно удалённо. Требуемые навыки: #intern, #PHP, #SQL, #REST, #Битрикс24, #HTML, #CSS, #JavaScript, #CI/CD.</description>
+      <author>Компания 34</author>
+      <pubDate>Fri, 13 Nov 2026 10:28:05 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000168358</link>
+      <guid>1000168358</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «DevOps Engineer (KORM)»</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «DevOps Engineer (KORM)». Можно удалённо. Требуемые навыки: #DevOps.</description>
+      <author>Компания 35</author>
+      <pubDate>Fri, 13 Nov 2026 10:22:06 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000167096</link>
+      <guid>1000167096</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «System Analyst (Senior) » (от 250 000 до 265 000 ₽)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «System Analyst (Senior) ». От 250 000 ₽ до 265 000 ₽. Полный рабочий день. Можно удалённо. Требуемые навыки: #senior, #PostgreSQL, #UML, #BPMN, #Системнаяаналитика, #RESTfulAPI, #ApacheKafka, #OpenAPISpecification, #Postman, #pgSQL, #SQL.</description>
+      <author>Компания 36</author>
+      <pubDate>Fri, 13 Nov 2026 09:27:03 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169202</link>
+      <guid>1000169202</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Golang-разработчик» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Golang-разработчик». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #senior, #Golang, #Linux, #PostgreSQL, #gRPC, #Docker, #Redis, #ApacheKafka, #Базыданных, #Python, #Git.</description>
+      <author>Компания 37</author>
+      <pubDate>Fri, 13 Nov 2026 08:27:17 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000166881</link>
+      <guid>1000166881</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Senior Data Analyst» (от 195 000 до 210 000 ₽)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Senior Data Analyst». От 195 000 ₽ до 210 000 ₽. Полный рабочий день. Можно удалённо. Требуемые навыки: #senior, #Python, #Яндекс.Метрика, #Appsflyer, #PostgreSQL, #Greenplum.</description>
+      <author>Компания 38</author>
+      <pubDate>Fri, 13 Nov 2026 00:53:26 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169927</link>
+      <guid>1000169927</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Senior System Analyst » (от 220 000 до 250 000 ₽)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Senior System Analyst ». От 220 000 ₽ до 250 000 ₽. Полный рабочий день. Можно удалённо. Требуемые навыки: #senior, #SQL, #RESTfulAPI, #UML, #BPMN, #ApacheKafka, #Postman, #PostgreSQL, #Redis, #REST, #MongoDB.</description>
+      <author>Компания 39</author>
+      <pubDate>Thu, 12 Nov 2026 22:46:14 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169474</link>
+      <guid>1000169474</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Системный аналитик (Senior)» (Москва)</title>
+      <description>Компания «Пример»» ищет хорошего специалиста на вакансию «Системный аналитик (Senior)». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #senior, #Системныйанализ, #ApacheKafka, #PostgreSQL.</description>
+      <author>Компания 40</author>
+      <pubDate>Thu, 12 Nov 2026 22:40:54 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169473</link>
+      <guid>1000169473</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Middle Golang Разработчик» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Middle Golang Разработчик». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #middle, #Golang, #PostgreSQL, #SQL, #Базыданных.</description>
+      <author>Компания 41</author>
+      <pubDate>Thu, 12 Nov 2026 17:42:24 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169469</link>
+      <guid>1000169469</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Ведущий Python-разработчик» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Ведущий Python-разработчик». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #senior, #Python, #ApacheKafka, #RabbitMQ.</description>
+      <author>Компания 42</author>
+      <pubDate>Thu, 12 Nov 2026 17:27:20 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000166751</link>
+      <guid>1000166751</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Tech Lead NLP/LLM»</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Tech Lead NLP/LLM». Полный рабочий день. Можно удалённо. Требуемые навыки: #lead, #Python.</description>
+      <author>Компания 43</author>
+      <pubDate>Thu, 12 Nov 2026 17:27:20 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000168871</link>
+      <guid>1000168871</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Oracle developer (+Delphi+Vue+Go)» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Oracle developer (+Delphi+Vue+Go)». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #middle, #Oracle, #OraclePL/SQL, #Delphi, #Vue.js, #Golang.</description>
+      <author>Компания 44</author>
+      <pubDate>Thu, 12 Nov 2026 16:57:51 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000167936</link>
+      <guid>1000167936</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Oracle developer (+Vue+C#)» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Oracle developer (+Vue+C#)». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #middle, #Oracle, #OraclePL/SQL, #C#, #Vue.js.</description>
+      <author>Компания 45</author>
+      <pubDate>Thu, 12 Nov 2026 16:35:20 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000167935</link>
+      <guid>1000167935</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Middle+ DWH Engineer» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Middle+ DWH Engineer». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #middle, #ApacheAirflow, #SQL, #Python, #DWH, #ETL.</description>
+      <author>Компания 46</author>
+      <pubDate>Thu, 12 Nov 2026 16:29:55 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169646</link>
+      <guid>1000169646</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Junior+ Product analyst (команда Content)» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Junior+ Product analyst (команда Content)». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #Математическаястатистика, #SQL, #Python.</description>
+      <author>Компания 47</author>
+      <pubDate>Thu, 12 Nov 2026 16:10:49 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169645</link>
+      <guid>1000169645</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Senior OpenStack Engineer (эксплуатация)» (Москва)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Senior OpenStack Engineer (эксплуатация)». Москва (Россия). Полный рабочий день. Можно удалённо. Требуемые навыки: #lead, #KVM, #Openstack, #Linux, #Kubernetes, #Docker, #Python, #DevOps, #Bash, #Terraform, #Ansible.</description>
+      <author>Компания 48</author>
+      <pubDate>Thu, 12 Nov 2026 15:37:55 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169644</link>
+      <guid>1000169644</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Fullstack-разработчик (Golang+React)» (Белград)</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Fullstack-разработчик (Golang+React)». Белград (Сербия), Лимассол (Кипр). Полный рабочий день. Можно удалённо. Требуемые навыки: #senior, #Golang, #TypeScript, #React, #gRPC, #MySQL, #ApacheKafka, #Docker, #Kubernetes.</description>
+      <author>Компания 49</author>
+      <pubDate>Thu, 12 Nov 2026 15:33:42 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169585</link>
+      <guid>1000169585</guid>
+      
+    </item>
+    <item>
+      <title>Требуется «Системный аналитик DWH/Проектная работа/ АУТСТАФФ»</title>
+      <description>Компания «Пример» ищет хорошего специалиста на вакансию «Системный аналитик DWH/Проектная работа/ АУТСТАФФ». Полный рабочий день. Можно удалённо. Требуемые навыки: #senior, #DWH, #SQL, #ETL, #BI, #Разработкапод1С, #ApacheAirflow, #ОбъектноехранилищеS3, #Apache, #ClickHouse, #Git.</description>
+      <author>Компания 50</author>
+      <pubDate>Thu, 12 Nov 2026 14:25:46 +0300</pubDate>
+      <link>https://career.habr.com/vacancies/1000169643</link>
+      <guid>1000169643</guid>
+      
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+# Тестовый профиль (TEST_PLAN.md, раздел 3): не зависит от настоящего config/profile.yaml.
+source_note: "тестовый профиль"
+
+professional:
+  positioning: "Python-разработчик и тестировщик (QA)"
+  goal: "Удалённая работа"
+  languages:
+    - {language: ru, level: native}
+  education: "Высшее техническое"
+  experience: "Стажировка"
+  skills_confirmed:
+    "Язык": [python]
+    "Telegram": [aiogram]
+    "Backend": [fastapi, rest api]
+    "Базы данных": [sql, postgresql]
+    "Тестирование": [postman, pytest, api testing]
+    "DevOps": [docker, git]
+  skills_unconfirmed: [sqlalchemy]
+  projects:
+    - name: "Бот мониторинга цен"
+      task_types: [telegram_bots, api_integration, scraping]
+    - name: "Мини-CRM REST API"
+      task_types: [backend_api, database_sql, api_testing]
+  covered_task_types: [telegram_bots, backend_api, api_integration, scraping, database_sql, manual_testing,
+                       api_testing, python_autotests, llm_integration]
+  confirmed_missing:
+    - text: "рабочие языки, кроме русского"
+      applies_to: language
+  unknown_params:
+    documents: unknown
+    foreign_phones: unknown
+    employment_forms: unknown
+  contacts: {telegram: "@test", email: "test@example.com", phone: "+000", github: "example"}
+
+search:
+  current_location: GE
+  preferred_format: remote
+  employer_priority_first: [RU, KZ]
+  employer_priority_second: [AM, AZ, BY, KG, MD, TJ, TM, UZ]
+  working_language: ru

@@ -1,0 +1,82 @@
+# Источники вакансий (SOURCES.md). Применяется при следующем запуске сбора.
+# Новый Telegram-канал подключается одной записью ниже, без изменения кода.
+#
+# Режимы: active — в отчёте; quiet — тихий сбор (собирается, в отчёт не попадает);
+# waiting — ждёт внешнего события, не опрашивается; disabled — отключён, не опрашивается.
+# Результаты проверки доступа (probe-sources, 13.11.2026) записаны в note.
+
+user_agent: "AIVacancyHunter/0.1 (personal job search, single user)"   # контакт владельца — по решению владельца (R4)
+
+defaults:
+  interval_hours: 3            # не чаще раза в 3 часа (правило R5)
+  degraded_interval_hours: 12
+  domain_pause_seconds: 3
+  max_age_days: 14
+  failures_to_degrade: 5
+  empty_runs_to_alert: 3
+
+sources:
+  # --- Telegram: активные (приоритет 1, аудит) ---
+  - {code: tg_it_interns, kind: telegram, adapter: telegram_preview, channel: it_interns, mode: active}
+  - {code: tg_juno_jobs, kind: telegram, adapter: telegram_preview, channel: juno_jobs, mode: active}
+  - {code: tg_young_june, kind: telegram, adapter: telegram_preview, channel: young_june, mode: active}
+  - {code: tg_young_intern, kind: telegram, adapter: telegram_preview, channel: young_intern, mode: active}
+  - {code: tg_juniors_rabota_jobs, kind: telegram, adapter: telegram_preview, channel: juniors_rabota_jobs, mode: active}
+  - {code: tg_theyseeku, kind: telegram, adapter: telegram_preview, channel: theyseeku, mode: active}
+  - {code: tg_workayte, kind: telegram, adapter: telegram_preview, channel: workayte, mode: active}
+
+  # --- Telegram: тихий сбор (приоритет 2) ---
+  - {code: tg_jobs_juniors_remote, kind: telegram, adapter: telegram_preview, channel: jobs_juniors_remote, mode: quiet}
+  - {code: tg_freelanceworkhome, kind: telegram, adapter: telegram_preview, channel: freelanceworkhome, mode: quiet}
+  - {code: tg_frilans_na_legke, kind: telegram, adapter: telegram_preview, channel: frilans_na_legke, mode: quiet}
+  - {code: tg_pythonpythonjobs, kind: telegram, adapter: telegram_preview, channel: pythonpythonjobs, mode: quiet}
+  - {code: tg_newdirections, kind: telegram, adapter: telegram_preview, channel: newdirections, mode: quiet}
+  - {code: tg_yuniorapp, kind: telegram, adapter: telegram_preview, channel: yuniorapp, mode: quiet}
+  - {code: tg_aivacancychannel, kind: telegram, adapter: telegram_preview, channel: aivacancychannel, mode: quiet}
+  - {code: tg_vibecodingjob, kind: telegram, adapter: telegram_preview, channel: Vibecodingjob, mode: quiet}
+  - {code: tg_jun_qa, kind: telegram, adapter: telegram_preview, channel: jun_qa, mode: quiet}
+  - {code: tg_talentmove_channel, kind: telegram, adapter: telegram_preview, channel: talentmove_channel, mode: quiet}
+  - {code: tg_forpython, kind: telegram, adapter: telegram_preview, channel: forpython, mode: quiet}
+  - {code: tg_jobforjunior, kind: telegram, adapter: telegram_preview, channel: jobforjunior, mode: quiet}
+
+  # --- Telegram: ожидает проверки владельцем ---
+  - {code: tg_sofiandpartners, kind: telegram, adapter: telegram_preview, channel: sofiandpartners, mode: waiting,
+     note: "по описанию — не лента вакансий; ждёт ручной проверки владельцем (S7)"}
+
+  # --- hh через RSS: ограниченный режим, оценка только по заголовку (SOURCES.md 5.1) ---
+  - code: hh_rss_ru
+    kind: rss
+    adapter: hh_rss
+    mode: active
+    note: "13.11.2026: с компьютера hh.ru отвечал 451 — отключён по R6; 15.11.2026: с сервера лента доступна, включён решением владельца"
+    url: "https://hh.ru/search/vacancy/rss?text={query}&schedule=remote&search_period=1"
+    queries: &hh_queries
+      - python разработчик
+      - backend python
+      - telegram бот
+      - ai автоматизация
+      - тестировщик
+      - qa engineer
+      - парсинг
+      - стажёр python
+  - code: hh_rss_kz
+    kind: rss
+    adapter: hh_rss
+    mode: active
+    note: "13.11.2026: RSS hh.kz доступна"
+    url: "https://hh.kz/search/vacancy/rss?text={query}&schedule=remote&search_period=1"
+    queries: *hh_queries
+
+  # --- Хабр Карьера через RSS (SOURCES.md 5.3) ---
+  - code: habr_career
+    kind: rss
+    adapter: habr_career_rss
+    mode: active
+    note: "13.11.2026: RSS вакансий доступна без ключа; API требует ключ приложения"
+    url: "https://career.habr.com/vacancies/rss?q={query}&remote=true&sort=date"
+    queries:
+      - python
+      - telegram
+      - llm
+      - qa
+      - парсинг

@@ -1,0 +1,15 @@
+# Расписание задач (ARCHITECTURE.md, разделы 11–12). Применяется при перезапуске.
+# Время отчёта меняется также через /settings (шаг A7); значение из Telegram приоритетнее.
+
+timezone: Asia/Tbilisi
+collect_every_hours: 3
+process_every_minutes: 30
+report_time: "07:00"
+report_catchup_until: "14:00"   # догоняющий отчёт после перезапуска
+outbox_every_seconds: 10
+cleanup_time: "03:30"
+backup_time: "04:00"
+heartbeat_every_minutes: 15
+lease_minutes: 15
+recalc_every_minutes: 60        # пересчёт оценок без LLM (TECHNICAL_SPEC.md, раздел 19): ожидающие и ошибки
+recalc_pause_before_report_minutes: 15

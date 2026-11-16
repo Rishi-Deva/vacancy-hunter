@@ -1,0 +1,16 @@
+# Сроки хранения (ARCHITECTURE.md, раздел 13; DATABASE_SCHEMA.md, раздел 12).
+# Применяется при следующей очистке (задача cleanup — шаг A8).
+
+raw_items_days: 30
+rejected_text_days: 60      # текст отклонённых и непоказанных
+reported_text_days: 180     # текст показанных без отметки
+dedup_keys_days: 365
+runs_days: 90               # fetch_runs, job_runs
+outbox_days: 30
+reports_days: 365
+ledger_months: 13
+backups_daily: 7
+backups_weekly: 4
+cleanup_batch_rows: 1000
+log_file_mb: 10             # ротация логов выполняется Docker (docker-compose.yml)
+log_files: 5
